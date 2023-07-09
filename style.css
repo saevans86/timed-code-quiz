@@ -14,24 +14,21 @@ body{
     height: 100%;
   margin: 0;
   padding: 0;
+  position: relative;
     
  }
- .wrapper {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
-  margin: 0 auto;
-  max-width: 600px;
-  height:  600px;
-  padding: 30px 20px;
-  box-sizing: border-box;
-  
-}
-
-.card-header {
-    font-size:20px;
-}
+ /* .wrapper { */
+  /* background-color: hsl(0, 0%, 100%); */
+  /* border-radius: 5px; */
+  /* border-width: 1px; */
+  /* box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px; */
+  /* margin: 0 auto; */
+  /* max-width: 600px; */
+  /* height:  600px; */
+  /* padding: 30px 20px; */
+  /* box-sizing: border-box; */
+/*    */
+/* } */
 
 .button {
     
@@ -49,12 +46,11 @@ body{
     height:300px ;
     font-weight: bold;
 }
-#id {
-    /* margin-bottom: 10px; */
-    /* padding-bottom: 10px; */
-}
 
-/* @media { */
-/*     */
-/*     */
-/* } */
+
+
+
+
+
+
+

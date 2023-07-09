@@ -8,11 +8,19 @@
 </head>
 <body> 
     <div>
-    <div class="wrapper">
-    <h3 class="card-header"> Timed coding quiz</h3>
-    <div class="card-body"> If an answer is incorrect, time will be deducted from your time remaining </div>     
-    <div class="textBox"></div>        
-    <button class="button" id="beginQuiz">Start</button>
+    <div class="wrapper">       
+    
+    <div>   <div id="quizQuestions"></div> </div> 
+        <div id="quizOptions"></div> 
+        </div>
+        <div>
+    <button id="buttonT"> true </button>
+    <button id="buttonF"> false </button>
+        </div>
+            <div id="rightOrWrong"></div>       
+     <button class="startButton" id="beginQuiz">Start</button>
+    <span id="restartBn"></span>
+    </div>
     <div id="timeLeft"></div>    
     </div>      
 </body>
