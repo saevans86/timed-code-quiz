@@ -8,44 +8,48 @@
        }
 body{
     text-align: center;
-}
-
-.wrapper {
-    height: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-    
- }
- /* .wrapper { */
-  /* background-color: hsl(0, 0%, 100%); */
-  /* border-radius: 5px; */
-  /* border-width: 1px; */
-  /* box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px; */
-  /* margin: 0 auto; */
-  /* max-width: 600px; */
-  /* height:  600px; */
-  /* padding: 30px 20px; */
-  /* box-sizing: border-box; */
-/*    */
-/* } */
-
-.button {
-    
-    color:rgb(255, 255, 255);
-    background-color: black;
-    height: 30px;
-    width: 90px;
-    border-radius: 25px; 
 
 }
-.card-body {
-    border-radius: 5px;
-    border-width: 1px;
-    background-color: rgb(247, 247, 247);
-    height:300px ;
-    font-weight: bold;
+
+
+#tehBox { 
+       
+       
+        -webkit-box-shadow: 5px 5px 29px 5px #000000; 
+        box-shadow: 5px 5px 29px 5px #000000;
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
