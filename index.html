@@ -2,29 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <title>Timed coding quiz</title>
 </head>
-<body> 
-    <div>
-    <div class="wrapper">       
-    
-    <div>   <div id="quizQuestions"></div> </div> 
-        <div id="quizOptions"></div> 
-        </div>
-        <div>
-    <button id="buttonT"> true </button>
-    <button id="buttonF"> false </button>
-        </div>
-            <div id="rightOrWrong"></div>       
-     <button class="startButton" id="beginQuiz">Start</button>
-    <span id="restartBn"></span>
-    </div>
-    <div id="timeLeft"></div>    
-    </div>      
+<body>
+    <div id="page1">
+        <p>Time will be deducted for each incorrect response.</p>
+        <button id="beginQuiz">Press start to begin</button>
+      </div>
+      <div id="page2" style="display: none;">
+        <h1>Quiz Questions</h1>
+        <div id="quizQuestions"></div>
+        <div id="quizOptions"></div>
+        <button id="submitAnswer">Submit Answer</button>
+        <div id="timeLeft"></div>
+        <div id="results"></div>
+      </div>   
+    <script src="script.js" ></script>
 </body>
-<script src="script.js" ></script>
+
 </html>
 
 <!--
