@@ -35,8 +35,7 @@ var quizQuestions = document.getElementById("quizQuestions");
 var quizOptions = document.getElementById("quizOptions");
 var timeLeft = document.getElementById("timeLeft");
 var score = document.getElementById("score");
-var results = document.getElementById("results");
-var saveScore = document.querySelector("#saveScore")
+var saveScore = document.getElementById("saveScore")
 var currentQuestion = 0;
 var penaltyTime = 10;
 var totalTime = questions.length * 10;
@@ -71,10 +70,10 @@ function checkAnswer(event) {
   var selectedOption = event.target.textContent;
   var question = questions[currentQuestion];
   if (selectedOption === question.answer) {
-    results.textContent = "Correct!";
+    score.textContent = "Correct!";
     userScore++;
   } else {
-    results.textContent =
+    score.textContent =
       "Incorrect! Penalty of " + penaltyTime + " seconds";
     totalTime -= penaltyTime;
     if (totalTime < 0) totalTime = 0;
@@ -84,7 +83,7 @@ function checkAnswer(event) {
     setTimeout(function () {
       displayQuestion();
       startTimer();
-      results.textContent = "";
+      score.textContent = "";
     }, 1000);
   } else {
     setTimeout(function () {
@@ -114,10 +113,38 @@ var container = document.getElementById("container");
   score.textContent = "Final Score: " + userScore + "/" + questions.length;
 }
 
+function scoreSave() {
+    var score = {
+        score: score.value,
+        player: player.value,
+        input: input.value.trim() 
+    };
+    localStorage.setItem("score", JSON.stringify(score));
+} 
+function renderScore() {
+    var savedScore = JSON.parse(localStorage.getItem("score"));
+    document.getElementById("saveScore").innerHTML = savedScore.score;
+    if (lastScore !== null) {
+        document.getElementById("saveScore").innerHTML = savedScore.player;
+        document.getElementById("saveScore").innerHTML = savedScore.player;
+    } else {
+        return;
+    }
+}
+saveScore.addEventListener("click", function(event) {
+    event.preventDefault();
+    scoreSave();
+    renderScore();
+
+});
+function init() {
+    renderScore();
+}
+init();
 
 
 
-
+//build new page to display saved score + name
 
 
 
