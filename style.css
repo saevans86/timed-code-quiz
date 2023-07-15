@@ -8,20 +8,32 @@
        }
 body{
     text-align: center;
+    align-items: center;
 
 }
+form {
+    align-items : center;
+    display : flex;
+    flex-direction:column;
+  }
 
 
-#tehBox { 
-       
-       
-        -webkit-box-shadow: 5px 5px 29px 5px #000000; 
-        box-shadow: 5px 5px 29px 5px #000000;
 
 
-}
 
 
+
+
+/* #tehBox {  */
+/*         */
+/*         */
+        /* -webkit-box-shadow: 5px 5px 29px 5px #000000;  */
+        /* box-shadow: 5px 5px 29px 5px #000000; */
+/*  */
+/*  */
+/* } */
+/*  */
+/*  */
 
 
 

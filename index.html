@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="style.css"/>
     <title>Timed coding quiz</title>
 </head>
+
 <body>
-    <div id="tehBox">
+    
     <div id="page1">
         <p>Time will be deducted for each incorrect response.</p>
         <button id="beginQuiz">Press start to begin</button>
@@ -19,10 +20,15 @@
         <div id="timeLeft"></div>
     </div>
         <div id="results" style="display: none  ;"></div>
-        <div id="score"></div>
+        <div id="score"></div>       
+        <div id="input"></div>
     </div>
-    </div>
-         
+    <container id="container" style="display: none  ;" >
+    <label for="myInput">Save your score:</label>
+    <button>Submit</button>
+    <input type="text" id="myInput">
+    <button type="button" onClick="window.location.reload()"> Restart quiz</button>
+     </container>    
     <script src="script.js" ></script>
 </body>
 
