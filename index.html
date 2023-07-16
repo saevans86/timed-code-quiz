@@ -7,29 +7,34 @@
     <title>Timed coding quiz</title>
 </head>
 
-<body>
-    
+<body> 
+    <a href="highScore"><button id="#viewScores">View High Scores</button></a>
     <div id="page1">
         <p>Time will be deducted for each incorrect response.</p>
         <button id="beginQuiz">Press start to begin</button>
-      </div>
-      <div id="page2" style="display: none;">
+    </div>
+    <div id="page2" style="display: none;">
         <h1>Quiz Questions</h1>
         <div id="quizQuestions"></div>
         <div id="quizOptions"></div>
         <div id="timeLeft"></div>
     </div>
-        <div id="results" style="display: none  ;"></div>
-        <div id="score"></div>       
+    <div id="results" style="display: none;"></div>
+    <div id="score"></div>
+    <container id="container" style="display: none;">
+        <label for="playerName">Save your score:</label>
+        <input type="text" id="playerName">
+        <button type="button" id="saveScore">Save Score</button>
+        <div id="FinalScore"></div>
+    </container>
+    <div id="scorePage" style="display: none;">
+        <div id="highScore"></div>
+        <div id="saveName"></div>
+        <div id="scoreList"></div>
+        <button onClick="window.location.reload()">Restart quiz</button>
     </div>
-    <container id="container" style="display: none  ;" >
-    <label for="myInput">Save your score:</label>
-    
-    <input type="text" id="myInput">
-    <button type="button" id="saveScore">Save Score</button>
+    <div id="#viewScores"style="display: none;"></div>
 
-    <button onClick="window.location.reload()"> Restart quiz</button>
-     </container>    
     <script src="script.js" ></script>
 </body>
 
