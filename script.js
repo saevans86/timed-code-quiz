@@ -145,11 +145,7 @@ function init() {
 init();
 
 
-// seeHighScores.addEventListener("click", function(event){
-    // saveScore(event);
-// 
-// });
-// 
+seeHighScores.addEventListener("click", function(event){
+    saveScore(event);
 
-//working out pulling the JSON stored objects into a new page
-// 
+});
