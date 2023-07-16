@@ -8,7 +8,8 @@
 </head>
 
 <body> 
-    <a href="highScore"><button id="#viewScores">View High Scores</button></a>
+    <div class="container">
+    <button id="viewScoresBtn">View High Scores</button></a>
     <div id="page1">
         <p>Time will be deducted for each incorrect response.</p>
         <button id="beginQuiz">Press start to begin</button>
@@ -22,7 +23,7 @@
     <div id="results" style="display: none;"></div>
     <div id="score"></div>
     <container id="container" style="display: none;">
-        <label for="playerName">Save your score:</label>
+        <label for="playerName">Enter your name to save your score:</label>
         <input type="text" id="playerName">
         <button type="button" id="saveScore">Save Score</button>
         <div id="FinalScore"></div>
@@ -33,9 +34,8 @@
         <div id="scoreList"></div>
         <button onClick="window.location.reload()">Restart quiz</button>
     </div>
-    <div id="#viewScores"style="display: none;"></div>
-
-    <script src="script.js" ></script>
+</div>
+        <script src="script.js" ></script>
 </body>
 
 </html>
