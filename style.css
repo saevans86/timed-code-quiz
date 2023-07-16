@@ -5,13 +5,28 @@
     
        }
 
- .container {
+ .containerPage {
 
   text-align: center;
+  flex: content;
 }
        
+#timeLeft {
+  float: right;
+}
+.header {
+  text-align: center;
+  
+}
 
-       
+
+
+
+
+
+
+
+
 
        
     
